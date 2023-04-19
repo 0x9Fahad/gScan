@@ -1,10 +1,14 @@
 import os
 import time
 import urllib.parse
+import pyfiglet
+from printy import printy
 
 # Prompt the user to enter a search string
-print("gScan")
-print("This is a Google Dorking tool")
+
+asciiBanner = pyfiglet.figlet_format("gScan!")
+printy(asciiBanner, 'y')
+printy("[rI]This is a Google Dorking tool")
 search_string = input("Enter a search string: ")
 
 # Construct the Google search URLs
@@ -30,7 +34,7 @@ search_urls = [
 ]
 while True:
     # Prompt the user to select a search to use
-    print("Which search do you want to use?")
+    printy("Which search do you want to use?", 'y')
     print("1. Directory Listing Vulnerabilities")
     print("2. Exposed Configuration Files")
     print("3. Exposed Database Files")
