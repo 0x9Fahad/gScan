@@ -1,10 +1,9 @@
 # gScan
 ## Description
-gScan is a simple Google Dorking tool that enables you to efficiently search Google for vulnerable web pages and sensitive information. With its user-friendly interface and advanced search queries, gScan simplifies the process of identifying security vulnerabilities and potential attack vectors for websites, servers, and network devices.
+gScan is a simple Google Dorking tool that enables you to efficiently search Google for vulnerable web pages and sensitive information. With its user-friendly interface and advanced search queries, gScan simplifies the process of identifying security vulnerabilities and potential attack vectors for websites, and servers.
 
 ## Features
-Search Google using predefiend search queries (dorks) to find web pages that are vulnerable to SQL injection, cross-site scripting (XSS), file inclusion, and other common web application attacks.
-Discover sensitive information such as usernames, passwords, credit card numbers, and confidential documents that may have been inadvertently exposed online.
+Search Google using predefiend search queries (dorks) to find web pages that are vulnerable to find subdomains, sensitive data, and other common web application attacks.
 It Filters search results by domain, file type, file size, date, and other parameters to focus your search on specific targets.
 
 ### Installation
