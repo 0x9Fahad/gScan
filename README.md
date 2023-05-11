@@ -4,7 +4,7 @@ gScan is a simple Google Dorking tool that enables you to efficiently search Goo
 
 ## Features
 Search Google using predefiend search queries (dorks) to find web pages that are vulnerable to find subdomains, sensitive data, and other common web application attacks.
-It Filters search results by domain, file type, file size, date, and other parameters to focus your search on specific targets.
+It Filters search results by domain, file type, title, in-text, and other parameters to focus your search on specific targets.
 
 ### Installation
 #### Dependencies
