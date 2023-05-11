@@ -22,6 +22,8 @@ Python3 gScan.py
 ```
 
 ## Executing
-To use gScan, simply provide a desired target domain or IP address. gScan will automatically search Google. 
+1- To use gScan, simply provide a desired target domain or IP address.
+2- chose the search option
+3- the tool will open your web browser automatically and begin the search
 
 
