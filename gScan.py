@@ -30,7 +30,8 @@ search_urls = [
     "https://www.google.com/search?q=site:*."+ search_string,
     "https://www.google.com/search?q=site:*.*."+ search_string,
     "https://crt.sh/?q=%25."+ search_string,
-    "https://www.shodan.io/search?query="+ search_string, ""
+    "https://google.com/search?q=site:" + search_string +"+inurl%3A%22.php%3Fcmd%3D%22+%7C+inurl%3A%22.php%3Fz%3D%22+%7C+inurl%3A%22.php%3Fq%3D%22+%7C+inurl%3A%22.php%3Fsearch%3D%22+%7C+inurl%3A%22.php%3Fquery%3D%22+%7C+inurl%3A%22.php%3Fsearchst%C2%ADring%3D%22+%7C+inurl%3A%22.php%3Fkeyword%3D%C2%AD%22+%7C+inurl%3A%22.php%3Ffile%3D%22+%7C+inurl%3A%22.php%3Fyears%3D%22+%7C+inurl%3A%22.php%3Ftxt%3D%22+%7C+inurl%3A%22.php%3Ftag%3D%22+%7C+inurl%3A%22.php%3Fmax%3D%22+%7C+inurl%3A%22.php%3Ffrom%3D%22+%7C+inurl%3A%22.php%3Fauthor%3D%22+%7C+inurl%3A%22.php%3Fpass%3D%22+%7C+inurl%3A%22.php%3Ffeedback%C2%AD%3D%22+%7C+inurl%3A%22.php%3Fmail%3D%22+%7C+inurl%3A%22.php%3Fcat%3D%22+%7C+inurl%3A%22.php%3Fvote%3D%22+%7C+inurl%3Asearch.php%3Fq%3D+%7C+inurl%3Acom_feedpostol%C2%ADd%2Ffeedpost.php%3Furl%3D+%7C+inurl%3Ascrapbook.php%3F%C2%ADid%3D+%7C+inurl%3Aheadersearch.p%C2%ADhp%3Fsid%3D+%7C+inurl%3A%2Fpoll%2F%C2%ADdefault.asp%3Fcatid%3D+%7C+inurl%3A%2F%C2%ADsearch_results.php%3Fse%C2%ADarch%3D+%7C+inurl%3AcategoryId+%7C+inurl%3AstoreId++%7C+inurl%3AresultCatEntryType+%7C+inurl%3AsearchTermScope+%7C+inurl%3A%E2%80%9Dwebapp%2Fwcs%E2%80%9D+%7C+inurl%3A%E2%80%9DProductListingView%E2%80%9D+%7C+inurl%3A%E2%80%9DAdvancedSearchDisplay%E2%80%9D+%7C+inurl%3A%E2%80%9DCompareProductsDisplayView%E2%80%9D+%7C+inurl%3Aparent_category_rn",
+    "https://www.shodan.io/search?query="+ search_string, "", ""
 ]
 while True:
     # Prompt the user to select a search to use
@@ -50,15 +51,16 @@ while True:
     print("13. Subdomains")
     print("14. Sub-Subdomains")
     print("15. check crt.sh")
-    print("16. SHODAN")
+    print("16. XSS Hunter")
+    print("17. SHODAN")
     print("Type 'end' or 'exit' to exit.")
-    choice = input("Enter the number of the search you want to use (1-16): ")
+    choice = input("Enter the number of the search you want to use (1-17): ")
     if choice.lower() in ["end", "exit"]:
         exit(0)
-    elif choice.isdigit() and int(choice) in range(1, 16):
+    elif choice.isdigit() and int(choice) in range(1, 17):
         # Open the selected search URL in the default web browser
         os.system('xdg-open "' + search_urls[int(choice) - 1] + '"')
     else:
-        print("Invalid choice. Please enter a number between 1 and 16.")
+        print("Invalid choice. Please enter a number between 1 and 17.")
         continue
 
