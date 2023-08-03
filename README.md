@@ -9,12 +9,17 @@ It Filters search results by domain, file type, title, in-text, and other parame
 ### Installation
 #### Dependencies
 Python3
+Printy
 
 #### Installation Process
 To install gScan, simply clone the repository and install the dependencies
 
 ```
 git clone https://github.com/0x9Fahad/gScan
+```
+Download Dependencies 
+```
+pip3 install -r requirements.txt
 ```
 Run the gScan script to start the tool 
 ```
