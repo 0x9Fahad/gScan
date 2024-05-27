@@ -19,7 +19,11 @@ git clone https://github.com/0x9Fahad/gScan
 ```
 Download Dependencies 
 ```
-pip3 install -r requirements.txt
+pip install pyfiglet
+```
+
+```
+pip install printy
 ```
 Run the gScan script to start the tool 
 ```
