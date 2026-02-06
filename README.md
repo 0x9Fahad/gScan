@@ -1,38 +1,71 @@
-# gScan
+# gScan — Google Dorking Automation Tool for OSINT & Recon
+
 ## Description
-gScan is a simple Google Dorking tool that enables you to efficiently search Google for vulnerable web pages and sensitive information. With its user-friendly interface and advanced search queries, gScan simplifies the process of identifying security vulnerabilities and potential attack vectors for websites, and servers.
+gScan is a lightweight Python-based Google dorking automation tool designed for OSINT, reconnaissance, and bug bounty workflows. It helps security researchers quickly generate targeted Google search queries (dorks) to discover indexed subdomains, exposed files, login portals, and publicly accessible sensitive information.
+
+This tool streamlines manual Google dorking by automating query generation and launching searches directly in the browser.
+
+---
 
 ## Features
-Search Google using predefiend search queries (dorks) to find web pages that are vulnerable to find subdomains, sensitive data, and other common web application attacks.
-It Filters search results by domain, file type, title, in-text, and other parameters to focus your search on specific targets.
+- Automated Google dork generation
+- Subdomain discovery via search indexing
+- Sensitive file discovery (PDF, logs, backups, configs)
+- Login portal discovery
+- Domain-focused search filtering
+- Simple CLI-based workflow
+- Browser-integrated search execution
 
-### Installation
-#### Dependencies
-Python3
-Printy
+---
 
-#### Installation Process
-To install gScan, simply clone the repository and install the dependencies
+## Installation
+
+### Requirements
+- Python 3.x
+- pyfiglet
+- printy
+
+### Install gScan
+
+## Clone the repository:
 
 ```
 git clone https://github.com/0x9Fahad/gScan
+cd gScan
 ```
-Download Dependencies 
+
+## Install dependencies:
 ```
 pip install pyfiglet
-```
-
-```
 pip install printy
 ```
-Run the gScan script to start the tool 
-```
-Python3 gScan.py
-```
 
-## Executing
-1- To use gScan, simply provide a desired target domain or IP address.
-2- chose the search option
-3- the tool will open your web browser automatically and begin the search
+## Run the tool:
+```
+python3 gScan.py
+```
+## Usage
 
+- Enter a target domain or IP address.
+
+- Choose a search option from the menu.
+
+- gScan will automatically open your browser and execute the selected Google dork.
+
+## Example Use Cases
+
+- Bug bounty reconnaissance
+
+- OSINT investigations
+
+- Discovering indexed sensitive files
+
+- Finding login panels
+
+- Subdomain discovery via search engines
+
+
+## Disclaimer
+
+This tool is intended for authorized security testing, OSINT, and educational purposes only. Users are responsible for complying with applicable laws and bug bounty program policies.
 
